@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MultiplyQuiz
 {
-    internal class AddIt
+    public class AddIt
     {
-        static void addIt()
+        public static void addIt()
         {
             Random rnd = new Random();
 
