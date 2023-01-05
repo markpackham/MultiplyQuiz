@@ -8,7 +8,7 @@ namespace MultiplyQuiz
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Choose *, + or -. The default is *");
+            Console.WriteLine("Choose *, +, - or /. The default is *");
             string choice = Console.ReadLine().ToString();
 
             if (choice.Equals("+"))
@@ -18,6 +18,10 @@ namespace MultiplyQuiz
             else if (choice.Equals("-"))
             {
                 SubIt.subIt();
+            }
+            else if (choice.Equals("/"))
+            {
+                DivideIt.divideIt();
             }
             else
             {
