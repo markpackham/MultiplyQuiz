@@ -27,19 +27,7 @@ namespace MultiplyQuiz
 
             try
             {
-                int guess = Convert.ToInt32(Console.ReadLine());
-                if (guess == 0)
-                {
-                    Environment.Exit(0);
-                }
-                else if (guess == answer)
-                {
-                    Console.WriteLine("Correct");
-                }
-                else
-                {
-                    Console.WriteLine($"Wrong answer was {answer}");
-                }
+                CheckUserInput.checkUserInput(answer);
             }
             catch
             {
