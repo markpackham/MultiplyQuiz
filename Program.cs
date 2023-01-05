@@ -33,6 +33,7 @@ namespace MultiplyQuiz
             catch
             {
                 Console.WriteLine("Int32 values only");
+                multiplyIt();
             }
 
             multiplyIt();
