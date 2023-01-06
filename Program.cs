@@ -9,7 +9,7 @@ namespace MultiplyQuiz
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Choose *, +, -, square or /. The default is *");
+            Console.WriteLine("Choose *, +, -, square, squareR or /. The default is *");
             string choice = Console.ReadLine().ToString();
 
             if (choice.Equals("+"))
@@ -27,6 +27,10 @@ namespace MultiplyQuiz
             else if (choice.Equals("square"))
             {
                 SquareIt.squareIt();
+            }
+            else if (choice.Equals("squareR"))
+            {
+                SquareRootIt.squareRootIt();
             }
             else
             {
