@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MultiplyQuiz.operators
 {
-    public class SquareRootIt
+    public class SquareRootOper
     {
         public static void squareRootIt()
         {

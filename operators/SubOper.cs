@@ -7,7 +7,7 @@ using MultiplyQuiz.helpers;
 
 namespace MultiplyQuiz.operators
 {
-    public class SubIt
+    public class SubOper
     {
         public static void subIt()
         {

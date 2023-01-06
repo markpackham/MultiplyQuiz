@@ -14,27 +14,27 @@ namespace MultiplyQuiz
 
             if (choice.Equals("+"))
             {
-                AddIt.addIt();
+                AddOper.addIt();
             }
             else if (choice.Equals("-"))
             {
-                SubIt.subIt();
+                SubOper.subIt();
             }
             else if (choice.Equals("/"))
             {
-                DivideIt.divideIt();
+                DivideOper.divideIt();
             }
             else if (choice.Equals("square"))
             {
-                SquareIt.squareIt();
+                SquareOper.squareIt();
             }
             else if (choice.Equals("squareR"))
             {
-                SquareRootIt.squareRootIt();
+                SquareRootOper.squareRootIt();
             }
             else
             {
-                MultiplyIt.multiplyIt();
+                MultiplyOper.multiplyIt();
             }
         
         }
