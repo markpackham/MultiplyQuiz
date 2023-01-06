@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MultiplyQuiz.helpers;
 
-namespace MultiplyQuiz
+namespace MultiplyQuiz.operators
 {
     public class DivideIt
     {
@@ -16,7 +17,7 @@ namespace MultiplyQuiz
             int num2 = rnd.Next(1, 100);
             int answer = num2 / num1;
 
-            while(answer < 0 || num2%num1 != 0)
+            while (answer < 0 || num2 % num1 != 0)
             {
                 num1 = rnd.Next(1, 10);
                 num2 = rnd.Next(1, 100);

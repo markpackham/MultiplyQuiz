@@ -1,4 +1,5 @@
-﻿using static System.Net.Mime.MediaTypeNames;
+﻿using MultiplyQuiz.operators;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace MultiplyQuiz
 {
