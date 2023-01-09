@@ -15,7 +15,7 @@ namespace MultiplyQuiz.operators
 
             int num1 = rnd.Next(1, 10);
             int answer = (int)Math.Pow(num1, pow);
-            Console.WriteLine($"{num1} to the power of {pow} = what? Press 0 to quit.");
+            Console.WriteLine($"{num1} to the power of {pow} = what? Press 0 for Main Menu.");
 
             try
             {

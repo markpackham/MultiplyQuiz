@@ -19,7 +19,7 @@ namespace MultiplyQuiz.operators
                 answer = num2 / num1;
             }
 
-            Console.WriteLine($"{num2} / {num1} = what? Press 0 to quit.");
+            Console.WriteLine($"{num2} / {num1} = what? Press 0 for Main Menu.");
 
             try
             {

@@ -11,7 +11,7 @@ namespace MultiplyQuiz.operators
             int num1 = rnd.Next(1, 100);
             int num2 = rnd.Next(1, 100);
             int answer = num1 - num2;
-            Console.WriteLine($"{num1} - {num2} = what? Press 0 to quit.");
+            Console.WriteLine($"{num1} - {num2} = what? Press 0 for Main Menu.");
 
             try
             {

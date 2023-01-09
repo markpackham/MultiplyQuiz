@@ -7,7 +7,7 @@
             int guess = Convert.ToInt32(Console.ReadLine());
             if (guess == 0)
             {
-                Environment.Exit(0);
+                MenuPage.mainMenu();
             }
             else if (guess == answer)
             {

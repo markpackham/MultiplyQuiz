@@ -6,10 +6,14 @@ namespace MultiplyQuiz
     {
         public static void mainMenu()
         {
-            Console.WriteLine("Choose *, +, -, /, square, squareR or power. The default is *");
+            Console.WriteLine("Choose *, +, -, /, square, squareR, power or to quit 'exit'. The default is *");
             string choice = Console.ReadLine().ToString();
 
-            if (choice.Equals("+"))
+            if (choice.Equals("exit"))
+            {
+                Environment.Exit(0);
+            }
+            else if (choice.Equals("+"))
             {
                 AddOper.addIt();
             }
