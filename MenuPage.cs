@@ -15,7 +15,19 @@ namespace MultiplyQuiz
             }
             else if (choice.Equals("+"))
             {
-                AddOper.addIt();
+
+                Console.WriteLine("Supply a max value, the default is 10");
+                try
+                {
+                    int maxValue = Convert.ToInt32(Console.ReadLine());
+                    AddOper.addIt(maxValue);
+                }
+                catch
+                {
+                    int maxValue = 10;
+                    AddOper.addIt(maxValue);
+                }
+
             }
             else if (choice.Equals("-"))
             {

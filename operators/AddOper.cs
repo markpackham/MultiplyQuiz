@@ -4,12 +4,12 @@ namespace MultiplyQuiz.operators
 {
     public class AddOper
     {
-        public static void addIt()
+        public static void addIt(int maxValue)
         {
             Random rnd = new Random();
 
-            int num1 = rnd.Next(1, 100);
-            int num2 = rnd.Next(1, 100);
+            int num1 = rnd.Next(1, maxValue);
+            int num2 = rnd.Next(1, maxValue);
             int answer = num1 + num2;
             Console.WriteLine($"{num1} + {num2} = what? Press 0 for Main Menu.");
 
@@ -20,10 +20,10 @@ namespace MultiplyQuiz.operators
             catch
             {
                 Console.WriteLine($"Int32 values only, answer was {answer}");
-                addIt();
+                addIt(maxValue);
             }
 
-            addIt();
+            addIt(maxValue);
         }
     }
 }
