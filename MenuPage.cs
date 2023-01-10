@@ -20,7 +20,17 @@ namespace MultiplyQuiz
                 try
                 {
                     int maxValue = Convert.ToInt32(Console.ReadLine());
-                    AddOper.addIt(maxValue);
+                    if (maxValue > 9 && maxValue < 301)
+                    {
+                        AddOper.addIt(maxValue);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Max Value out of range, 10-300 so has been set to 100!");
+                        maxValue = 100;
+                        AddOper.addIt(maxValue);
+                    }
+                    
                 }
                 catch
                 {
@@ -35,7 +45,16 @@ namespace MultiplyQuiz
                 try
                 {
                     int maxValue = Convert.ToInt32(Console.ReadLine());
-                    SubOper.subIt(maxValue);
+                    if (maxValue > 9 && maxValue < 301)
+                    {
+                        SubOper.subIt(maxValue);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Max Value out of range, 10-300 so has been set to 100!");
+                        maxValue = 100;
+                        SubOper.subIt(maxValue);
+                    }
                 }
                 catch
                 {
