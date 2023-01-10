@@ -16,7 +16,7 @@ namespace MultiplyQuiz
             else if (choice.Equals("+"))
             {
 
-                Console.WriteLine("Supply a max value, the default is 10");
+                Console.WriteLine("Supply a max value between 10 and 300, the default is 100");
                 try
                 {
                     int maxValue = Convert.ToInt32(Console.ReadLine());
@@ -24,14 +24,24 @@ namespace MultiplyQuiz
                 }
                 catch
                 {
-                    int maxValue = 10;
+                    int maxValue = 100;
                     AddOper.addIt(maxValue);
                 }
 
             }
             else if (choice.Equals("-"))
             {
-                SubOper.subIt();
+                Console.WriteLine("Supply a max value between 10 and 300, the default is 100");
+                try
+                {
+                    int maxValue = Convert.ToInt32(Console.ReadLine());
+                    SubOper.subIt(maxValue);
+                }
+                catch
+                {
+                    int maxValue = 100;
+                    SubOper.subIt(maxValue);
+                }
             }
             else if (choice.Equals("/"))
             {
